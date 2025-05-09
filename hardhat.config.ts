@@ -61,7 +61,7 @@ function getChainConfig(chain: keyof typeof chainIds): NetworkUserConfig {
 
 task("coverage").setAction(async (taskArgs, hre, runSuper) => {
   hre.config.networks.hardhat.allowUnlimitedContractSize = true;
-  hre.config.networks.hardhat.blockGasLimit = 1099511627775;
+  hre.config.networks.hardhat.blockGasLimit = 111099511627775;
 
   await runSuper(taskArgs);
 });
